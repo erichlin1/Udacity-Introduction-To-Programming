@@ -1,0 +1,33 @@
+.card
+{
+
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    border: 2px solid lightgrey;
+
+}
+
+.description
+{
+    border: 2px solid lightgrey;
+    padding: 10px;
+
+}
+
+ul li span
+{
+    font-weight: bold;
+}
+ul li
+{
+    list-style: none;
+
+}
+
+img
+{
+    padding-bottom: 10px;
+}
+
+
