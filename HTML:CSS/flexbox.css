@@ -1,0 +1,63 @@
+.container
+{
+    width: 400px; 
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid black;
+}
+
+.box
+{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    color: white;
+}
+
+
+.firstBox
+{
+    background-color: red;
+}
+
+.secondBox
+{
+    background-color: black;
+}
+.thirdBox
+{
+    background-color: black;
+}
+.fourthBox
+{
+    background-color: red;
+}
+.fifthBox
+{
+    background-color: black;
+}
+
+
+
+
+
+/* As the width of container decreases, the items within, decreases. Flex item will only
+decrease up the point of the content borders. */
+
+
+
+/* DRY. In this Case, define a container that envelopes the boxes. define
+a ruleset to governs the behavior of the boxes, and define each boxes behavior.
+
+1. If you have multiple objects that have similaries, and few differences, isolate
+the similarities and define a separate object.
+
+Think in terms of end and start, instead of left and right.
+NOTE:
+1. when the main-axis starts from left to right,(start-end) then the cross-axis 
+is perpendicular and starts from up to down.
+
+To define a Flex container, declare 'display' with property value, flex.
+items within the container is known as, flex items.
+*/
