@@ -1,0 +1,13 @@
+ul
+{
+    width: 300px;
+    height: 300px;
+    display: flex;
+}
+
+li
+{
+    border: 1px solid black;
+    width: 90px;
+    height: 90px;
+}
