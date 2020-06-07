@@ -1,0 +1,59 @@
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    border: 20px solid black;
+
+    
+}
+/* Within the container, contains a list items, which
+are represented by boxes.
+*/
+.mainBox
+{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    list-style: none
+
+}
+.box1
+{
+    background-color: cadetblue;
+}
+.box2
+{
+    background-color: cadetblue;
+}
+.box3
+{
+    background-color: cadetblue;
+}
+.box4
+{
+    background-color: cadetblue;
+}
+.box5
+{
+    background-color: cadetblue;
+}
+.box6
+{
+    background-color: cadetblue;
+}
+.box7
+{
+    background-color: cadetblue;
+}
+.box8
+{
+    background-color: cadetblue;
+}
+.box9
+{
+    background-color: cadetblue;
+}
