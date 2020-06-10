@@ -160,5 +160,56 @@ function myName(name)
 */
 
 // console.log produces a value, therefore, it is an expressions.
-console.log(Math.max(3,1,2,5,3,6,7,8));
+
+/* 
+
+function numberType(number)
+{
+    // Unless number (int) is 'not a number'
+    if (!Number.isNaN(number) && number >= 0)
+    {
+        if (number % 2 === 0)
+        {
+            console.log('even');
+
+        } else {
+            console.log('odd');
+        };
+    } else {
+        console.log('Error: The value that you have chosen is not valid');
+    };
+};
+
+numberType(10);
+numberType(0);
+numberType(1);
+numberType(3);
+numberType(4);
+numberType(-5);
+*/
+
+
+function musicians(musicalGroups)
+{
+    if (musicalGroups <= 0)
+    {
+        console.log('not a group');
+    } else if (musicalGroups === 1) {
+        console.log('solo');
+    } else if (musicalGroups === 2) {
+       console.log('duet');
+    } else if (musicalGroups === 3) {
+        console.log('trio');
+   } else if (musicalGroups === 4) {
+       console.log('quartet');
+   } else if (musicalGroups > 4) {
+       console.log('musicians');
+   };
+};
+
+musicians(3);
+musicians(1);
+musicians(5);
+musicians(0);
+musicians(3);
 
