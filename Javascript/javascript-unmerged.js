@@ -188,7 +188,7 @@ numberType(4);
 numberType(-5);
 */
 
-
+// exercise that determines musiscal group based on input integer.
 function musicians(musicalGroups)
 {
     if (musicalGroups <= 0)
@@ -207,9 +207,36 @@ function musicians(musicalGroups)
    };
 };
 
-musicians(3);
-musicians(1);
-musicians(5);
-musicians(0);
-musicians(3);
+// while loop - given a number, determine the odd integers, and log them in the console.
+function oddNumbers(number)
+{
+    let index = 0;
+    // while will continue execution if condition is true.
+    while (number !== 0 && number % 3 === 0)
+    {
+        console.log(number);
+        number = number - 3;
+    };
+
+};   
+
+
+// NOTE: 3 logical operators (! , || , &&)
+
+// DO Loop - executes atleast once
+
+function doLoop(number)
+{
+    do
+    {
+        console.log(number);
+    } while (number % 3 !== 0)
+};
+
+// All string will convert to true except for an empty string.
+
+
+// Murder Myster (3-4)
+
+
 
