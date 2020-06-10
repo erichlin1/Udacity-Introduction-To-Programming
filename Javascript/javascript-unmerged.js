@@ -25,6 +25,24 @@ Null is simliar to 'Undefined' Treat both Null and 'Undefined' the same.
 // Escaping Character - ES6 string literal - backtick basics
 // template literal - string literals that allow for embedded expressions (template substitute)
 
+
+
+// ---- Exercise ---- //
+
+const age = 28;
+let escapingCharacter = `Eric is ${age}.` // variable called Template Literal
+console.log(escapingCharacter)
+// every character in a string literal has correpsonding ASCII value.
+let myString = `blue`;
+let index = 0;
+let characterCount = 0;
+for (index; index < myString.length; index++)
+{
+    console.log(myString.charCodeAt(index));
+};
+
+
+
 // ** Implicit type coercion **
 
 /* As the name states, A integer declared as a string data type will be converted into 
@@ -44,19 +62,21 @@ Where as...
 LTL generates less error, but leads to more error. 
 */
 
+
 // ---- Exercise ---- //
 
-const age = 28;
-let escapingCharacter = `Eric is ${age}.` // variable called Template Literal
-console.log(escapingCharacter)
-// every character in a string literal has correpsonding ASCII value.
-let myString = `blue`;
-let index = 0;
-let characterCount = 0;
-for (index; index < myString.length; index++)
-{
-    console.log(myString.charCodeAt(index));
-};
+console.log(String('Hello'));
+console.log(Number("Hello")); // => "Hello" cannot be converted into a legal Number. compare this to the following..
+console.log(Number("10")); // => 10.
+
+console.log("5" - 1);
+console.log("5" + 1);
+
+
+
+
+// ** Object instantiation **
+
 
 // ---- Exercise ---- //
 
@@ -69,15 +89,6 @@ const object1 = {
 };
 
 console.log(Object.getOwnPropertyNames(object1));
-
-// ---- Exercise ---- //
-
-console.log(String('Hello'));
-console.log(Number("Hello")); // => "Hello" cannot be converted into a legal Number. compare this to the following..
-console.log(Number("10")); // => 10.
-
-
-
 
 
 
