@@ -29,7 +29,9 @@ Null is simliar to 'Undefined' Treat both Null and 'Undefined' the same.
 
 // ---- Exercise ---- //
 
+/* 
 const age = 28;
+
 let escapingCharacter = `Eric is ${age}.` // variable called Template Literal
 console.log(escapingCharacter)
 // every character in a string literal has correpsonding ASCII value.
@@ -40,6 +42,7 @@ for (index; index < myString.length; index++)
 {
     console.log(myString.charCodeAt(index));
 };
+*/
 
 
 
@@ -65,6 +68,8 @@ LTL generates less error, but leads to more error.
 
 // ---- Exercise ---- //
 
+/*
+
 console.log(String('Hello'));
 console.log(Number("Hello")); // => "Hello" cannot be converted into a legal Number. compare this to the following..
 console.log(Number("10")); // => 10.
@@ -72,6 +77,7 @@ console.log(Number("10")); // => 10.
 console.log("5" - 1);
 console.log("5" + 1);
 
+*/
 
 
 
@@ -82,14 +88,77 @@ console.log("5" + 1);
 
 // instantiating an object requires property, and value declartion;
 
+/*
+
 const object1 = {
     name:'Eric',
     age: 28,
     ethnicity: 'Chinese'
 };
 
+
 console.log(Object.getOwnPropertyNames(object1));
 
+*/
 
 
+
+/* *** Type Conversion ***
+ 
+strict equality => when comparing data types.
+
+
+
+
+
+
+*/ 
+
+/* --- Exercise ----
+console.log("1" == 1);      
+console.log(0 === false);
+console.log(1 !== false);
+console.log(1 != false);
+console.log(true >= 0); // I suspect that this is true. 
+console.log(Number(true));
+console.log(true >= 0);
+console.log(1 !== false);
+console.log(3 === 3);
+console.log(null == undefined);
+console.log(Number(null));
+console.log(null)
+*/
+
+// Comparing a undefined or null datat type are equal.
+
+// var empty;
+//console.log(null == empty);
+// Javascript evalutes the operand first, then the operators. JS recognizes 'concatenation'
+//console.log("5" + 1);
+
+//--- Short Circuiting logical operators
+
+function myName(name)
+{
+    console.log(name);
+};
+// if the value to the left is true after conversion, then the value on the left is returned.
+// if it returns false, then the value to the right is returned.
+
+/*
+        // will return false
+        console.log(false && myName('Alyssa'));
+
+        // will return 'Alyssa'
+        console.log(true && myName('Alyssa'));
+
+        // will return true
+        console.log(true || myName('Alyssa'));
+
+        // will return 'Alyssa'
+        console.log(false || myName('Alyssa'));
+*/
+
+// console.log produces a value, therefore, it is an expressions.
+console.log(Math.max(3,1,2,5,3,6,7,8));
 
