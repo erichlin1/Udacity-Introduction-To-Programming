@@ -299,6 +299,36 @@ function atm(balance, checkBalance, isActive)
 
 };
 
+// Ice Cream Topping
 
+function iceCream(flavor, vessel, toppings)
+{
+    if (flavor === 'vanilla' || flavor === 'chocolate')
+    {
+        if (vessel === 'cone' || vessel === 'bowl')
+        {
+            if (toppings === 'sprinkles' || toppings === 'peanuts')
+            {
+                console.log(`I\'d like to two scoops of ${flavor} ice cream in a ${vessel} with ${toppings}.`)
+            }
+        }
+    }
+}
+
+
+
+function iceCream2(flavor, vessel, toppings)
+{
+    if ((flavor === 'vanilla' || flavor === 'chocolate') && (vessel === 'cone' || vessel === 'bowl') && (toppings === 'sprinkles' || toppings === 'peanuts'))
+    {
+        console.log(`I\'d like to two scoops of ${flavor} ice cream in a ${vessel} with ${toppings}.`)
+
+    }
+    
+    
+}
+
+
+// What do I wear?
 
 
