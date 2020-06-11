@@ -239,4 +239,66 @@ function doLoop(number)
 // Murder Myster (3-4)
 
 
+function MurderMystery(room, suspect)
+{
+    var weapon = '';
+    var solved = false;
+    if (room === 'billiards room')
+    {
+        weapon = 'pool stick';
+        var realSuspect = 'Mrs. Sparr';
+    } else if (room === 'ballroom') {
+        weapon = 'poison';
+        var realSuspect = 'Mrs. Kalehoff';
+    } else if (room === 'gallery') {
+        weapon = 'trophy';
+        var realSuspect = 'Mrs. Van Cleve'
+    } else {
+        weapon = 'knife';
+        var realSuspect = 'Mr. Parkes';
+    }
+
+    if (suspect === realSuspect)
+    {
+        solved = true;
+    }
+    if (solved)
+    {
+        console.log(`${suspect} did it in the ${room} with the ${weapon}!`);
+    }
+}
+
+
+// Not Correct
+
+
+function atm(balance, checkBalance, isActive)
+{
+    if (checkBalance == true)
+    {
+        if (isActive == true && balance > 0)
+        {
+            balance = balance.toFixed(2);
+            console.log(`Your balance is $${balance}.`);
+        } else {
+            if (isActive !== true)
+            {
+                console.log('Your account is no longer active.');
+            } else {
+                if (balance = 0)
+                {
+                    console.log('Your account is empty');
+                } else {
+                    console.log('Your balance is negative. Please contact bank.');
+                }
+            }
+        }
+    } else {
+        console.log('Thank you. Have a nice day!');
+    }
+
+};
+
+
+
 
