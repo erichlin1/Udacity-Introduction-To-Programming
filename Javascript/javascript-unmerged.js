@@ -1,3 +1,4 @@
+var assert = require('assert');
 
 // ** Variable BINDING **
 
@@ -121,8 +122,11 @@ console.log(1 !== false);
 console.log(1 != false);
 console.log(true >= 0); // I suspect that this is true. 
 console.log(Number(true));
+
 console.log(true >= 0);
+
 console.log(1 !== false);
+
 console.log(3 === 3);
 console.log(null == undefined);
 console.log(Number(null));
@@ -145,6 +149,7 @@ function myName(name)
 // if the value to the left is true after conversion, then the value on the left is returned.
 // if it returns false, then the value to the right is returned.
 
+
 /*
         // will return false
         console.log(false && myName('Alyssa'));
@@ -152,9 +157,12 @@ function myName(name)
         // will return 'Alyssa'
         console.log(true && myName('Alyssa'));
 
+        
         // will return true
         console.log(true || myName('Alyssa'));
+        
 
+        
         // will return 'Alyssa'
         console.log(false || myName('Alyssa'));
 */
@@ -213,6 +221,7 @@ function oddNumbers(number)
     let index = 0;
     // while will continue execution if condition is true.
     while (number !== 0 && number % 3 === 0)
+    
     {
         console.log(number);
         number = number - 3;
@@ -234,6 +243,7 @@ function doLoop(number)
 };
 
 // All string will convert to true except for an empty string.
+
 
 
 // Murder Myster (3-4)
@@ -262,6 +272,7 @@ function MurderMystery(room, suspect)
     {
         solved = true;
     }
+    
     if (solved)
     {
         console.log(`${suspect} did it in the ${room} with the ${weapon}!`);
@@ -276,13 +287,16 @@ function atm(balance, checkBalance, isActive)
 {
     if (checkBalance == true)
     {
+        
         if (isActive == true && balance > 0)
         {
+            
             balance = balance.toFixed(2);
             console.log(`Your balance is $${balance}.`);
         } else {
             if (isActive !== true)
             {
+                
                 console.log('Your account is no longer active.');
             } else {
                 if (balance = 0)
@@ -330,5 +344,65 @@ function iceCream2(flavor, vessel, toppings)
 
 
 // What do I wear?
+
+
+function shirtSizing(shirtWidth, shirtLength, shirtSleeve)
+{
+    if ((shirtWidth >= 18 && shirtWidth < 20) && (shirtLength >= 28 && shirtLength < 29) && (shirtSleeve >= 8.13 && shirtSleeve <8.38))
+    {
+        let size = 'S';
+        console.log(size);
+    } else if ((shirtWidth >= 20 && shirtWidth < 22) && (shirtLength >= 29 && shirtLength < 30) && (shirtSleeve >= 8.38 && shirtSleeve < 8.63))
+    {
+        let size = 'M';
+        console.log(size);
+    } else if ((shirtWidth >= 22 && shirtWidth < 24) && (shirtLength >= 30 && shirtLength < 31) && (shirtSleeve >= 8.63 && shirtSleeve < 8.88))
+    {
+        let size = 'L';
+        console.log(size);
+    } else if ((shirtWidth >= 24 && shirtWidth < 26) && (shirtLength >= 31 && shirtLength < 33) && (shirtSleeve >= 8.88 && shirtSleeve < 9.63))
+    {
+        let size = 'XL';
+        console.log(size);
+
+    } else if ((shirtWidth >= 26 && shirtWidth < 28) && (shirtLength >= 33 && shirtLength < 34) && (shirtSleeve >= 9.63 && shirtSleeve < 10.13))
+    {
+        let size = '2XL';
+        console.log(size);
+    } else if ((shirtWidth >= 28) && (shirtLength >= 34) && (shirtSleeve >= 10.13))
+    {
+        let size = '3XL';
+        console.log(size);
+    } else {
+        console.log('NA');
+    }
+
+
+}
+
+
+
+
+
+// ternery operator
+
+function value(number)
+{
+    let number2 = 10;
+    number === number2 ? ans() : ans2();
+};
+
+
+function ans()
+{
+    console.log('yes');
+};
+
+function ans2()
+{
+    console.log('no');
+}
+
+
 
 
