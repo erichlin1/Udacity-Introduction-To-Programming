@@ -1,4 +1,6 @@
 var assert = require('assert');
+const { NONAME } = require('dns');
+const { CLIENT_RENEG_LIMIT } = require('tls');
 
 // ** Variable BINDING **
 
@@ -405,6 +407,55 @@ function ans2()
 
 
 // ** Navigating the Food Chain ** 
+// if-else statements
+
+
+function foodChains(eatsPlants, eatsAnimals)
+{
+    var category = eatsAnimals ? (eatsPlants ? 'omnivores' : 'carnovires') : (eatsPlants ? 'herbivores' : undefined);
+    console.log(category);
+}
+
+// switch statements
+
+function switchTest(mood)
+{
+        switch (mood)
+    {
+        case 'irritated':
+            console.log('I hope you feel less stress');
+            break;
+        case 'happy':
+            console.log('Great!');
+            break;
+        case 'not happy':
+            console.log('I am so sorry..');
+            break;
+        default:
+            console.log('what\'s your mood?');
+    }
+
+}
 
 
 
+
+// Looping A Triangle
+
+
+function loop(amount)
+{
+    let hashString = '', emptyString = ' ';
+    for (var index = 0; index < amount ; index++)
+    {
+        hashString = hashString + emptyString; 
+        
+        console.log(`${hashString}#`);
+        
+    }
+};
+
+
+
+
+loop(5);
