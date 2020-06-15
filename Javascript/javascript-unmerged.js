@@ -1,4 +1,6 @@
 var assert = require('assert');
+// const { NONAME } = require('dns');
+// const { CLIENT_RENEG_LIMIT } = require('tls');
 
 // ** Variable BINDING **
 
@@ -405,6 +407,302 @@ function ans2()
 
 
 // ** Navigating the Food Chain ** 
+// if-else statements
 
 
+function foodChains(eatsPlants, eatsAnimals)
+{
+    var category = eatsAnimals ? (eatsPlants ? 'omnivores' : 'carnovires') : (eatsPlants ? 'herbivores' : undefined);
+    console.log(category);
+}
+
+// switch statements
+
+function switchTest(mood)
+{
+        switch (mood)
+    {
+        case 'irritated':
+            console.log('I hope you feel less stress');
+            break;
+        case 'happy':
+            console.log('Great!');
+            break;
+        case 'not happy':
+            console.log('I am so sorry..');
+            break;
+        default:
+            console.log('what\'s your mood?');
+    }
+
+}
+
+
+
+
+// Looping A Triangle
+
+
+function loop(amount)
+{
+    let hashString = '', emptyString = ' ';
+    for (var index = 0; index < amount ; index++)
+    {
+        hashString = hashString + emptyString; 
+        
+        console.log(`${hashString}#`);
+        
+    }
+};
+
+// back to school
+
+function backToSchool(education)
+{
+    var salary;
+    switch (education)
+    {
+        case 'no high school diploma':
+            salary = 25636;
+            break;
+        case 'a high school diploma':
+            salary = 35256;
+            break;
+        case 'an Associate\'s degree':
+            salary = 41496;
+            break;
+        case 'a Bachelor\'s degree':
+            salary = 59124;
+            break;
+        case 'a Master\'s degree':
+            salary = 69732;
+            break;
+        case 'a Professional degree':
+            salary = 89960;
+            break;
+        case 'a Doctoral degree':
+            salary = 84396;
+            break;
+    };
+    salary = salary.toLocaleString('en-US');
+    console.log(`In 2015, a person with ${education} earned an average of $${salary}/year.`);
+}
+
+
+
+// JuliaJames
+
+function juliaJames(number)
+{
+    var index = 0;
+    var james;
+    while (index < number)
+    {
+        if (index % 3 === index % 5)
+        {
+            console.log(index + ',' + 'JuliaJames');
+        } else if (index % 3 === 0)
+        {
+            console.log(index + ',' + 'Julia');
+        } else if (index % 5 === 0)
+        {
+            console.log(index + ',' + 'James');
+        } else
+        {
+            console.log(index);
+        }
+        index += 1;
+
+    }
+}
+
+// juliaJames Quiz written in using ternary operator.
+// Always try to reduce code for efficency and clarity. 
+
+function juliaJames2(number)
+{
+    var index = 0;
+    while (index < number)
+    {
+        let divThree = index % 3 === 0, divFive = index % 5 === 0;
+        let james = divFive ? (divThree ? 'JuliaJames' : 'James') : (divThree ? 'Julia' : index);
+        console.log(james);
+        index += 1;
+        
+    }
+}
+
+// Chessboard
+
+function chessBoard(n)
+{
+    return;
+}
+
+
+
+// even values - print white space
+    // odd values - n/a
+    // n / 2 => 4 white spaces & white hashtags
+    // starts with hashtag regardless
+    
+function BottlesOfJuice(num)
+{
+    return;
+}
+
+// CHapter 3.
+// square
+const square = function(x)
+{
+    return x * x;
+}
+
+// addition
+const addition = function(x)
+{
+    return x + x;
+}
+
+// square exponentiation
+const compound = function(x)
+{
+    return x ** 2;
+}
+
+
+function bottlesOfJuice(n)
+{
+    var index;
+    for (index = 99 ; index != (n-1) ; index--)
+    {
+        let firstPartLyrics = 'bottles of juice on the wall!'
+        let secondPartLyrics = 'bottles of juice! Take one down, pass it around...' 
+        console.log(`${index} ${firstPartLyrics}`)
+    }
+}
+
+
+function bottlesOfJuice2(num)
+{
+    var index;
+    let firstPartLyrics, secondPartLyrics;
+    while (index != num)
+    {
+        
+        let classifer = (num == 1 || num == 0) ? 'bottle' : 'bottles';
+
+        firstPartLyrics = `${classifer} of juice on the wall!`;
+        secondPartLyrics = `${classifer} of juice! Take one down, pass it around...`;
+        console.log(`${num} ${firstPartLyrics} ${num} ${firstPartLyrics} ${num} ${secondPartLyrics}`)
+
+        num -= 1;
+    }
+}
+
+
+function countdown()
+{
+    let index = 0;
+    while (startTime >= 0)
+    {
+        switch (startTime)
+        {
+            case 50:
+                console.log('Orbiter transfers from ground to internal power');
+                break;
+            case 31:
+                console.log('Ground launch sequencer is go for auto sequence start');
+                break;
+            case 16:
+                console.log('Activate launch pad sound suppression system');
+                break;
+            case 10:
+                console.log('Activate main engine hydrogen burnoff system');
+                break;
+            case 6:
+                console.log('Main engine start');
+                break;
+            case 0:
+                console.log('Solid rocket booster ignition and liftoff!');
+                break;
+            default:
+                console.log(`T-${startTime} seconds`);
+        }
+        startTime -= 1;
+    }
+    
+}
+
+
+// nested For Loops
+
+// Function & scope
+
+const scope = function(x)
+{
+    var index;
+    for (index = 1 ; index < x ; index++)
+    {
+        let secondIndex = 01010101;
+        console.log(10);
+    }
+    // console.log(secondIndex); // Error.
+    
+};
+
+
+// function parameters are bindings that are defined by the caller.
+// parameter functional bindings (PFB) is only defined within it's block scope, even though
+// there exist a global variable with the same name.
+// Multiple Degrees of locality
+
+// Lexical scoping 
+
+
+const animals = function(age)
+{
+    const dog = function(breed, owner)
+    {
+        console.log(`dog: ${age} years, ${breed}, ${owner}`);
+    }
+    const elephant = function(breed, owner)
+    {
+        console.log(`elephant: ${age} years, ${breed}, ${owner}`);
+
+    }
+
+    dog('German Shepard', 'Eric');
+    elephant('Bush Elephant', 'Alyssa');
+    
+}
+// animals(10);
+
+
+
+// imperative to initialize functions before calling. 
+// inner function inherits all bindings of the outer function.
+
+// function declaration refers to regular method of defining a function, as below:
+// phone() is accessible before the code that calls it.
+
+// function declaration does not follow the top-to-bottom control flow. 
+function phone(type)
+{
+    return type;
+}
+
+
+
+// funtion as a value
+const secondPhone = function(type)
+{
+    return type;
+};
+
+console.log(secondPhone('iphone'));
+
+// Nested Loops
+
+// Quiz: Changing the Loop (4-4)
 
