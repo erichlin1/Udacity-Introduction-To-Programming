@@ -455,7 +455,7 @@ function loop(amount)
     }
 };
 
-
+// back to school
 
 function backToSchool(education)
 {
@@ -488,4 +488,125 @@ function backToSchool(education)
     console.log(`In 2015, a person with ${education} earned an average of $${salary}/year.`);
 }
 
-backToSchool('no high school diploma');
+
+
+// JuliaJames
+
+function juliaJames(number)
+{
+    var index = 0;
+    var james;
+    while (index < number)
+    {
+        if (index % 3 === index % 5)
+        {
+            console.log(index + ',' + 'JuliaJames');
+        } else if (index % 3 === 0)
+        {
+            console.log(index + ',' + 'Julia');
+        } else if (index % 5 === 0)
+        {
+            console.log(index + ',' + 'James');
+        } else
+        {
+            console.log(index);
+        }
+        index += 1;
+
+    }
+}
+
+// juliaJames Quiz written in using ternary operator.
+// Always try to reduce code for efficency and clarity. 
+
+function juliaJames2(number)
+{
+    var index = 0;
+    while (index < number)
+    {
+        let divThree = index % 3 === 0, divFive = index % 5 === 0;
+        let james = divFive ? (divThree ? 'JuliaJames' : 'James') : (divThree ? 'Julia' : index);
+        console.log(james);
+        index += 1;
+        
+    }
+}
+
+// Chessboard
+
+function chessBoard(n)
+{
+    return;
+}
+
+
+
+// even values - print white space
+    // odd values - n/a
+    // n / 2 => 4 white spaces & white hashtags
+    // starts with hashtag regardless
+    
+function BottlesOfJuice(num)
+{
+    return;
+}
+
+// CHapter 3.
+// square
+const square = function(x)
+{
+    return x * x;
+}
+console.log(square(10));
+// addition
+const addition = function(x)
+{
+    return x + x;
+}
+console.log(addition(10));
+// square exponentiation
+const compound = function(x)
+{
+    return x ** 2;
+}
+console.log(compound(100000000000));
+
+function bottlesOfJuice(n)
+{
+    var index;
+    for (index = 99 ; index != (n-1) ; index--)
+    {
+        let firstPartLyrics = 'bottles of juice on the wall!'
+        let secondPartLyrics = 'bottles of juice! Take one down, pass it around...' 
+        console.log(`${index} ${firstPartLyrics}`)
+    }
+}
+
+
+function bottlesOfJuice2(num)
+{
+    var index = 0;
+    while (index != num)
+    {
+        let firstPartLyrics = 'bottles of juice on the wall!'
+        let secondPartLyrics = 'bottles of juice! Take one down, pass it around...' 
+        console.log(`${num} ${firstPartLyrics} ${num} ${secondPartLyrics}`)
+
+        num -= 1;
+    }
+}
+
+
+function bottlesOfJuice3(num)
+{
+    var index = -1;
+    while (num > index)
+    {
+        let firstPartLyrics = 'bottles of juice on the wall!'
+        let secondPartLyrics = 'bottles of juice! Take one down, pass it around...' 
+        console.log(`${num} ${firstPartLyrics} ${num} ${secondPartLyrics} ${num} ${firstPartLyrics}`)
+
+        num -= 1;
+    }
+}
+bottlesOfJuice3(99);
