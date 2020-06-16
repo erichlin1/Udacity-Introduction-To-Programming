@@ -700,9 +700,31 @@ const secondPhone = function(type)
     return type;
 };
 
-console.log(secondPhone('iphone'));
+
 
 // Nested Loops
 
 // Quiz: Changing the Loop (4-4)
+
+for (var x = 9 ; x >= 1 ; x--)
+{
+}
+
+// Quiz: Fix the Error 1
+
+for (x = 5 ; x < 10; x++)
+{
+}
+
+// Quiz: Factorial
+
+function factorial(n)
+{
+    for (let index = 0 ; n > index ; n--)
+    {
+        console.log(n);
+    
+    }
+}
+factorial(3);
 
