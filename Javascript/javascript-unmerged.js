@@ -720,6 +720,7 @@ for (x = 5 ; x < 10; x++)
 
 function factorial(n)
 {
+
     let factor = 1;
     for (let index = 1 ; index <= n ; index++)
     {
@@ -727,5 +728,70 @@ function factorial(n)
     }
     return factor;
 }
-console.log(factorial(5));
 
+
+// var keyword cannot have block scope => variable can be accessed anywhere
+
+function findMySeat(rows, seats)
+{
+    var rowIndex, seatIndex;
+    for (rowIndex = 0 ; rowIndex < rows ; rowIndex++)
+    {
+        for (seatIndex = 0 ; seatIndex <= seats ; seatIndex++)
+        {
+            console.log(`${rowIndex}-${seatIndex}`);
+        }
+    }
+}
+
+
+// reverse string
+
+const reverseString = function(string)
+{
+    let index;
+    let solution = '';
+    // need to know the length of the string
+    // recall that first position of a string or array starts at zero.
+    // Thus, (-1) => starts at 0.
+    for (index = string.length - 1 ; index >= 0 ; index--)
+    {
+        solution = solution + string[index];
+    }
+    console.log(`Reversed String: ${solution}`);
+}
+
+
+// Example.
+// Parameters are defined in the function declaration.
+// You are invoking a funtion by supplying arguement(s). 
+
+function findAverage(x, y) {
+    var answer = (x + y) / 2;
+    return answer;
+  }
+  
+  var avg = findAverage(5, 9);
+
+  // Quiz: laugh it Off 1
+
+function laugh1()
+  {
+      return 'hahahahahahahahahaha!';
+  }
+
+
+  // Quiz Laugh it Off 2
+
+function laugh(num)
+{
+    var index;
+    var ha = '';
+    for (index = 0 ; index < num ; index++)
+    {
+        ha += 'ha';
+          
+    }
+    return `${ha}!`
+}
+console.log(laugh(7));
