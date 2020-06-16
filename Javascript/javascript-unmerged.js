@@ -1,4 +1,5 @@
 var assert = require('assert');
+const { type } = require('os');
 // const { NONAME } = require('dns');
 // const { CLIENT_RENEG_LIMIT } = require('tls');
 
@@ -794,4 +795,74 @@ function laugh(num)
     }
     return `${ha}!`
 }
-console.log(laugh(7));
+
+
+// Arrow Function
+
+const myPhone = (type, age) => {console.log(`${type}, ${age}`)};
+const myFamily = (brother, sister) => {console.log(`${brother}, ${sister}`)};
+// if defining a function using the arrow keyword & contains only one parameter then parenthesis and breackets can be ommited. 
+const myClass = subject => console.log(`I have ${subject} class today`);
+const isCar = () => {console.log('I drive a lexus.')};
+
+
+// two or more - must include parenthesis and brackets
+// one parameter - optional parenthesis and brackets
+// zero parameters - same as (two or more)
+
+
+// optional arguements
+
+var isNumber = 'parameter is a number';
+var isNotNumber = 'parameter is not a number';
+var num = 'number'
+const isComputer = x => type(x) === num ? console.log(isNumber) : console.log(isNotNumber);
+
+// minus
+
+function minus(a, b) {
+    if (b === 5) 
+        console.log(b); // notice brackets are not included.
+}
+
+// Global Scope
+// function defined in global, is accessible everywhere. 
+
+// compare to book1
+const books = (subject) => 
+{
+    console.log(addition);
+    const math = (area) => 
+    {
+        var addition = '+'
+        console.log(addition);
+
+    }
+}
+
+const books1 = (subject) => 
+{
+    if (subject === 'math') 
+    {
+        let section = 'quadratic'; // if if statement is a single-statent, there cannot exist a lexical declaration
+        console.log(section);
+    }
+    
+}
+
+// Example of Shadowing (Variable Scope)
+// identifiers that are declared globally using var keyword is acessible in all scopes
+// If the identifer is changed, it will update all the cases globally.
+// ex:
+
+var x = 1;
+const timesTwo = () => {
+    var x = 1;
+    x = x * 2;
+    return x;
+}
+console.log(timesTwo());
+console.log(x);
+x = x + 10;
+console.log(x);
+
