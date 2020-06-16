@@ -720,11 +720,12 @@ for (x = 5 ; x < 10; x++)
 
 function factorial(n)
 {
-    for (let index = 0 ; n > index ; n--)
+    let factor = 1;
+    for (let index = 1 ; index <= n ; index++)
     {
-        console.log(n);
-    
+        factor  = factor * index;
     }
+    return factor;
 }
-factorial(3);
+console.log(factorial(5));
 
