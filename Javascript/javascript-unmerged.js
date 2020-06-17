@@ -887,6 +887,8 @@ const sayGreeting = () => {
 
 
 // Build a Triangle
+// if it is a single-line conditional and does not include lexical declaration
+// then brackets can be ommitted.
 
 const buildTriangle = (length) => { 
     let row, column;
@@ -895,15 +897,22 @@ const buildTriangle = (length) => {
     {
         for (column = 0; column < length; column++)
         {
-            triangle = triangle + '*';
+            triangle += '*';
+            console.log(triangle);
+            // if length of triangle is equal to index row, then add a new line.
+            if (triangle.length === row) 
+            {
+                triangle + '\n';
+                console.log(triangle);
 
+            }               
+            else 
+            {
+                break;
+            } 
         }
-        triangle += '\n';
-        
-        
-
-
     }
-    console.log(triangle);
+
 }
-buildTriangle(10);
+buildTriangle(7);
+
