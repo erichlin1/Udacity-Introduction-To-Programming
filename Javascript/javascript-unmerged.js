@@ -861,8 +861,49 @@ const timesTwo = () => {
     x = x * 2;
     return x;
 }
-console.log(timesTwo());
-console.log(x);
-x = x + 10;
-console.log(x);
 
+
+//  Example of Block Scope. test let keyword to see the behavior.
+
+const house = (size) => {
+    
+    if (size = '400 sq') {
+        var size2 = '500 sq';
+    }
+    console.log(size2)
+}
+
+
+// Example of Hoisting | NOTE: Hoisting does not imply instantiation, but declaration. 
+
+const sayGreeting = () => {
+    let name = 'Eric';
+    console.log(greeting + " " + name)
+    var greeting;
+}
+
+
+// Variable assignments are not hoisted.
+
+
+// Build a Triangle
+
+const buildTriangle = (length) => { 
+    let row, column;
+    var triangle = '';
+    for (row = 0; row < length; row++)
+    {
+        for (column = 0; column < length; column++)
+        {
+            triangle = triangle + '*';
+
+        }
+        triangle += '\n';
+        
+        
+
+
+    }
+    console.log(triangle);
+}
+buildTriangle(10);
