@@ -894,28 +894,27 @@ const buildTriangle2 = (length) => {
     let row, column;
     var triangle = '';
 
-    for (row = 0; row < length; row++)
+    for (row = 1; row <= length; row++)
     {
         
-        for (column = 0; column < length; column++)
-        {   
-            // if length of triangle is equal to index row, then add a new line.
-            
-            if (triangle.length === row) 
+        for (column = 1; column <= length; column++)
+        {
+            if (row === column) 
             {
-                triangle = triangle + '\n';
-                //console.log(` triangle length: ${triangle.length} | row: ${row}`)
-            }               
-            else 
-            {
-                break;
+                triangle += '*';
+
             }
-            triangle += '*';
+            console.log(`row: ${row}, column: ${column} length of triangle: ${triangle.length}`)
         }
+        if (triangle.length === row)
+        {
+            triangle += '\n';
+        }
+    
     }
     return triangle;
 }
-console.log(buildTriangle2(13));
+
 
 
 
@@ -931,5 +930,32 @@ const makeLine = (length) => {
     
     return astricks;
 }
-// console.log(makeLine(5));
+
+
+
+// Question: Does nested for loops, start a new line?
+
+const nestedLoops = () => {
+    for (var i = 1; i < 2; i++)
+    {
+        for (var j = 1; j < 2; j++)
+        {
+            console.log('$');
+        }
+        console.log('#');
+    }
+}
+
+
+
+// Ans: It does.
+
+// Closure:
+
+const wrapValue = (n) => {
+    let local = n;
+    return () => local;
+}
+let wrap1 = wrapValue(1);
+console.log(wrap1());
 
