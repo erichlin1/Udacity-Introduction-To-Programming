@@ -888,41 +888,54 @@ const sayGreeting = () => {
 
 // Build a Triangle
 // if it is a single-line conditional and does not include lexical declaration
-// then brackets can be ommitted.
+// ... then brackets can be ommitted.
+
+// write a function that returns a astricks with a newline.
 
 const buildTriangle2 = (length) => { 
     let row, column;
-    var triangle = '';
-
+    var triangle = ''; frame = '';
     for (row = 1; row <= length; row++)
     {
-        
         for (column = 1; column <= length; column++)
         {
             if (row === column) 
             {
+                // declaring a function using the arrow function. return statement is implicit.
+                const myFunc = triangle => triangle + '\n';
                 triangle += '*';
-
+                frame += myFunc(triangle)
             }
-            console.log(`row: ${row}, column: ${column} length of triangle: ${triangle.length}`)
         }
-        if (triangle.length === row)
-        {
-            triangle += '\n';
-        }
-    
     }
-    return triangle;
+    return frame;
 }
 
 
 
+// lesson learned:
+
+// 1. concatenating a newline to a string is not the same as returning a newline and subsequently, concentating a newline. 
 
 
 
-const makeLine = (length) => {
+
+
+
+
+
+
+
+
+// pseudocode.
+
+/* NOTE: makeline accepts input length that prints on # of character and starts a newline.
+*/
+
+
+const makeLine = (index) => {
     var astricks = '';
-    for (var line = 0; line < length; line++)
+    for (var line = 0; line < index; line++)
     {
         astricks += '*';
     }
@@ -930,6 +943,18 @@ const makeLine = (length) => {
     
     return astricks;
 }
+
+function buildTriangle(length) {
+    for (var index = 1; index < length; index++)
+    {
+        return makeLine(index);
+    }
+}
+
+
+
+
+
 
 
 
@@ -946,16 +971,147 @@ const nestedLoops = () => {
     }
 }
 
-
-
 // Ans: It does.
 
+
+// Keyword (var, let, const) 
+
+// NOTE: var keyword does not follow block scope compared to const and let.
+// NOTE: when var is declared globally, it is accessible everywhere unless its redeclared inside a function
+// . . . this case, its follows functional scope. 
+// NOTE: Var can be redeclared, updated.
+// NOTE: let cannot be redeclared, but can be updated.
+// NOTE: const cannot be redeclared or updated.
+// NOTE: Global scope, functional scope, and block scope.
+
+
+
 // Closure:
+// local bindings are created anew for every call. different calls can't trample on one another's local bindings.
 
-const wrapValue = (n) => {
-    let local = n;
-    return () => local;
+
+// A function that references bindings from local scopes around it is called a closure. 
+// a local binding is declared or instantiated everytime there is a function call.
+// closure => reference. 
+
+// reference of n => closure.
+const newPhone = (ageOfPhone) => {
+    let n = ageOfPhone;
+
+    return () => n;
 }
-let wrap1 = wrapValue(1);
-console.log(wrap1());
+let phoneAge = newPhone(10);
 
+// reference of factor => closure. 
+// In this case, twice is a closure since it references factor (a local binding) that is a parameter of multiplier.
+const multiplier = (factor) => {
+    return number => number * factor;
+}
+let twice = multiplier(2);
+
+
+// function multiplier returns a function that accepts (1) parameter. that produces a value (number * factor)
+
+// A good mental model is to think of function values as containing both the 
+// ... code in their body and the environment in which they are created.
+
+
+
+// Function Expression:
+// storing a function in an identifier
+
+(function() {
+    let type = 10;
+    console.log(type)
+})();
+
+
+// anonymous function (a function with no name)
+
+// NOTE: all function declaration is hoisted to the top of the script before the scrip is executed.
+// function expressions are not hoisted because they involve variable assignment.
+// 
+
+
+// NOTE: function expressions - functions that are stored in a variable/
+// Quiz: Laugh.
+
+const laughTwo = function(num) {
+    var laugh = '';
+    for (var index = 0; index < num; index++)
+    {
+        laugh += 'ha';
+    }
+    return laugh;        
+};
+
+// Quiz: Cry.
+
+var cry = function emotion() {
+    return 'boohoo!';
+}
+cry();
+
+// Quiz: inline.
+
+
+
+
+function emotions(myString, myFunc) {
+     console.log('I am ' + myString + '', '' + myFunc(2))
+}
+
+/* 
+var myString = 'happy';
+const myFunc = function(num) {
+    var ha = '';
+    for (var index = 0; index < num; index++)
+    {
+        ha += 'ha';
+    }
+    return `${ha}!`;        
+};
+
+emotions(myString, myFunc);
+// */
+
+
+function addition2 (x, yFunc) {
+    console.log(`${x}, ${yFunc()}`);
+}
+
+addition2 (1, function() {
+    let yVariable = 2;
+    return yVariable;
+    
+});
+
+/* 
+* Fundamental: in order to invoke a function, argument(s) must be provided.
+* This arguments can be any type, including a functions.
+* NOTE: a function can be invoked while declaring a function. in this case..
+* a anonymous function.
+*/
+
+
+// invokation and function declaration
+
+
+function multiplication(myFuncTwo, myFuncOne)
+{
+    console.log(`${myFuncTwo()}, ${myFuncOne}`);
+}
+
+multiplication (1, function() {
+    return 1;
+});
+
+multiplication(function() {
+
+});
+
+/*
+* Cannot invoke a function with multiple inline function expressions as arguements.
+* There can only contain 1 inline function expression if it is the leading arguement. 
+*
+*/ 
