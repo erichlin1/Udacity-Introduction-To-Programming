@@ -1097,21 +1097,30 @@ addition2 (1, function() {
 // invokation and function declaration
 
 
-function multiplication(myFuncTwo, myFuncOne)
-{
-    console.log(`${myFuncTwo()}, ${myFuncOne}`);
-}
-
-multiplication (1, function() {
-    return 1;
-});
-
-multiplication(function() {
-
-});
 
 /*
 * Cannot invoke a function with multiple inline function expressions as arguements.
 * There can only contain 1 inline function expression if it is the leading arguement. 
-*
+* Function Declarations are always hoisted to the top of the script.
+* This is a different cases for function expression, and arrow functions.
+* Function expressions and arrow function do not create local bindings unlike regular functions.
 */ 
+
+// Quiz: Arrays.
+
+
+(function udaciFamily() {
+    var udaciFamily = ['julia','James','Eric'];
+        console.log(udaciFamily);
+}());
+
+// Quiz: The Price is Right
+
+var prices = [1.23, 48.11, 90.11, 8.50, 9.99, 1.00, 1.10, 67.00];
+
+
+prices[0] = 0.123;
+prices[2] = 2.123;
+prices[6] = 1.123;
+
+console.log(prices);
