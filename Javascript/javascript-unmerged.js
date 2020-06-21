@@ -1022,7 +1022,6 @@ let twice = multiplier(2);
 
 (function() {
     let type = 10;
-    console.log(type)
 })();
 
 
@@ -1080,11 +1079,6 @@ function addition2 (x, yFunc) {
     console.log(`${x}, ${yFunc()}`);
 }
 
-addition2 (1, function() {
-    let yVariable = 2;
-    return yVariable;
-    
-});
 
 /* 
 * Fundamental: in order to invoke a function, argument(s) must be provided.
@@ -1109,18 +1103,119 @@ addition2 (1, function() {
 // Quiz: Arrays.
 
 
-(function udaciFamily() {
+function udaciFamily() {
     var udaciFamily = ['julia','James','Eric'];
         console.log(udaciFamily);
-}());
+}
 
 // Quiz: The Price is Right
 
-var prices = [1.23, 48.11, 90.11, 8.50, 9.99, 1.00, 1.10, 67.00];
+var prices = [7.23, 48.11, 90.11, 8.50, 9.99, 1.00, 1.10, 67.00];
 
 
 prices[0] = 0.123;
 prices[2] = 2.123;
 prices[6] = 1.123;
 
-console.log(prices);
+// Push (appends element to last of array) push - Method
+
+prices.push(999);
+
+// pop (removes last element of the array) pop - Method
+
+prices.pop();
+
+/*
+* splice() Method
+* Example:
+* if deleteCount > 0 then the index (starting from 0) presceding from start index will be removed)
+* if deleteCount === 0 then elements will be inserted behind the refactored 0th index relative to start index.
+*
+*/
+
+/*
+const months = ['Jan', 'March', 'Apr', 'May', 'June', 'July', 'Sep'];
+months.splice(0, months.length, 0);
+console.log(months);
+//*/
+
+
+
+
+
+// Quiz: Quidditch Cup/
+var team = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter"];
+const hasEnoughPlayers = (team) => {
+    if (team.length >= 7) {
+        return true;
+    } else {
+        return false
+    };
+    
+
+};
+console.log(hasEnoughPlayers(team));
+
+
+//*
+function hasEnoughPlayers2(team) {
+    if (team.length >= 7) {
+        return true;
+    } else {
+        return false;
+    }
+};
+//*/
+
+
+// Joining the Crew. using push to add three more elements.
+
+(function joiningTheCrew() {
+    let captain = "Mal";
+    let second = "Zoe";
+    let pilot = "Wash";
+    let companion = "Inara";
+    let mercenary = "Jayne";
+    let mechanic = "Kaylee";
+    let doctor = "Simon";
+    let sister = "River";
+    let shepherd = "Book";
+
+    let crew = [captain, second, pilot, companion, mercenary, mechanic];
+    crew.push(doctor, sister, shepherd);
+    console.log(crew);
+})();
+
+// reversing a string.
+let array = ['1', '2', '3'];
+const reverseString2 = array => array.reverse();
+
+const reversedString3 = array.reverse();
+
+// reversing a string explicity.
+
+(function reverseArray (array) {
+    const arrayLen = array.length;
+    let decIndex = arrayLen;
+    for (let incIndex = 1; incIndex <= arrayLen; incIndex++) {
+        console.log(`${incIndex}`)
+    }
+})(['1', '2', '3']);
+
+
+/*  pseudo code
+*   known: length of array, indices
+*   obj: return reversed array
+*   In order to take the last index of newArray, subtract last index of newArray 
+* 
+*
+*   Test-Cases:
+*
+*
+*/
+
+
+
+
+
+
