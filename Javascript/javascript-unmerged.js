@@ -1196,11 +1196,13 @@ const reversedString3 = array.reverse();
 
 (function reverseArray (array) {
     const arrayLen = array.length;
-    let decIndex = arrayLen;
-    for (let incIndex = 1; incIndex <= arrayLen; incIndex++) {
-        console.log(`${incIndex}`)
+    const i = arrayLen - 1;
+    let newArray = [];
+    for (let j = 0 ; j < arrayLen; j++) {
+        newArray.push(array[i - j]);
     }
-})(['1', '2', '3']);
+    console.log(newArray);
+})(['1', '2', '3','4','5','6']);
 
 
 /*  pseudo code
@@ -1210,9 +1212,16 @@ const reversedString3 = array.reverse();
 * 
 *
 *   Test-Cases:
+*   
+*
+* 
+*   
+*
+*
 *
 *
 */
+
 
 
 
