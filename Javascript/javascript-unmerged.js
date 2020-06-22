@@ -1,5 +1,6 @@
 var assert = require('assert');
 const { type } = require('os');
+const { TestResult } = require('@jest/types');
 // const { NONAME } = require('dns');
 // const { CLIENT_RENEG_LIMIT } = require('tls');
 
@@ -1154,7 +1155,7 @@ const hasEnoughPlayers = (team) => {
     
 
 };
-console.log(hasEnoughPlayers(team));
+
 
 
 //*
@@ -1170,7 +1171,7 @@ function hasEnoughPlayers2(team) {
 
 // Joining the Crew. using push to add three more elements.
 
-(function joiningTheCrew() {
+function joiningTheCrew() {
     let captain = "Mal";
     let second = "Zoe";
     let pilot = "Wash";
@@ -1184,7 +1185,7 @@ function hasEnoughPlayers2(team) {
     let crew = [captain, second, pilot, companion, mercenary, mechanic];
     crew.push(doctor, sister, shepherd);
     console.log(crew);
-})();
+};
 
 // reversing a string.
 let array = ['1', '2', '3'];
@@ -1194,15 +1195,15 @@ const reversedString3 = array.reverse();
 
 // reversing a string explicity.
 
-(function reverseArray (array) {
+function reverseArray (array) {
     const arrayLen = array.length;
     const i = arrayLen - 1;
     let newArray = [];
     for (let j = 0 ; j < arrayLen; j++) {
         newArray.push(array[i - j]);
     }
-    console.log(newArray);
-})(['1', '2', '3','4','5','6']);
+    return newArray;
+};
 
 
 /*  pseudo code
@@ -1213,14 +1214,101 @@ const reversedString3 = array.reverse();
 *
 *   Test-Cases:
 *   
+
+*/
+
+/*  Array Loops */ 
+
+function arrayLoops(/* input array */ array) {
+    // donuts.length is out of bounds.
+    const arrayLen = array.length - 1;
+    for (let i = 0; i <= arrayLen; i++) {
+        array[i] = array[i] + ' hole';
+    }
+    return array;
+}
+
+/*  for each method */ 
+
+
+
+// parameter of .forEach is a function that performs some operation on the paramter array.
+// return value forEach() is always undefined.
+
+var numbers = [1,2,3,4,5,6,7,8];
+var newNumbers = [];
+function numberAddition(/* corresponds to each element in array */ number) {
+    number = number * 10;   
+
+    newNumbers.push(number);
+
+}
+numbers.forEach(numberAddition);
+console.log(newNumbers);
+
+/*  ***** .forEach() *****
 *
+*
+*
+
+*   performs operations defined by parameter function for each element in the array.
+*   NOTE: when referring to 'callback' function => function that calls a function within parameter.
+*   NOTE: Typical use case for .forEach() are Side Effects at the end of the chain.
+*
+*/
+
+/*  modifying an array during iteration
+*   NOTE: forEach does not make a copy of the array before iteration.
+*       ... Before callback invokation, forEach assignme
+*   forEach method does not wait for promises
+*   NOTE: deleting an array in position during iteration will cause a behavior similiar continue.
+*/
+
+
+let words = ['one', 'two', 'three', 'four']
+words.forEach((word) => {
+  if (word === 'two') {
+    words.shift()
+  }
+})
+// one
+// two
+// four
+
+/* Quiz: Another Type of Loop
 * 
-*   
-*
 *
 *
 *
 */
+
+
+var test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4, 19, 300, 3775, 299, 36, 209, 148, 169, 299, 6, 109, 20, 58, 139, 59, 3, 1, 139];
+
+/* forEach Method using inline functional expression declaration */
+test.forEach((score, index, array) => {
+    if (score % 3 === 0) {
+        array[index] = score + 100;
+    };
+    console.log(score);
+});
+
+/* forEach Method using fuction declaration and explicity invoking callback function using forEach Method on array. */
+function testScores(score, index, array) {
+    if (score % 3 === 0) {
+        array[index] = score + 100;
+    };
+    console.log(score);
+}
+
+test.forEach(testScores);
+
+/* 
+*.map method execution 
+* compared to forEach method, map method returns an array.
+*/
+
+
 
 
 
