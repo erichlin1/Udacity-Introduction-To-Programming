@@ -1372,8 +1372,32 @@ var numbers = [
 *
 */
 
+/*  Data Structures: Objects and Arrays.
+*   Strings are itself an array.
+*   non-values (null & undefined) do not have properties
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
 
 
 
 
+
+
+
+/* 
+*   Introduction to Git & Github 
+*   Diffing Files
+*   
+*
+*
+
+*/
 
