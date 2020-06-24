@@ -1244,8 +1244,6 @@ function numberAddition(/* corresponds to each element in array */ number) {
     newNumbers.push(number);
 
 }
-numbers.forEach(numberAddition);
-console.log(newNumbers);
 
 /*  ***** .forEach() *****
 *
@@ -1335,7 +1333,6 @@ var bills = [50.23, 19.12, 34.01, 100.11, 12.15, 9.90, 29.11, 12.99, 10.00, 99.2
 const totals = bills.map((bill) => {
     return Number((bill + (bill * 0.15)).toFixed(2));
 });
-console.log(totals);
 
 
 /*  nested numbers
@@ -1355,7 +1352,7 @@ var numbers = [
     [76, 7, 9, 6, 3, 73, 77, 100, 56, 100]
 ];
 
-(function nestedNumbers(numbers) {
+function nestedNumbers(numbers) {
     let newNumbers = [];
     const numbersLen = numbers.length;
     for (let i = 0; i < numbersLen; i++) {
@@ -1365,7 +1362,7 @@ var numbers = [
         };
         newNumbers.push(tempList);
     };
-})();
+}
 
 /* 
 * method is just a function that is associated with an object. 
@@ -1373,31 +1370,55 @@ var numbers = [
 */
 
 /*  Data Structures: Objects and Arrays.
-*   Strings are itself an array.
-*   non-values (null & undefined) do not have properties
 *
 *
+**  Properties ** 
 *
-*
-*
-*
-*
+* Strings are itself an array.
+* Non-values (null & undefined) do not have properties
+* Indices in a array an an numerical representation of the property name for the array.
+* To access the element in an array, you mind access the property of the array.
+* property names are strings
+* a property can be accessed to calling its valid property name isng the bracket notation.
+* OR accessing using DOT Notation. 
+* value.x - fetches the property name with the literial x name.
+* value[x] - tries to evaluate the expression x. x is converted to a property name first since properties are string data type.
 *
 *
 */
 
+/* Accessing a property of an object */
 
-
-
-
-
+let  newArray  = ['MonDay', 'TueSday', 'WednesDay', 'ThurSday'];
 
 /* 
-*   Introduction to Git & Github 
-*   Diffing Files
-*   
+** Methods **
 *
+* properties can hold function values, called Methods.
+* strings are inheritantly an array. all arrays contains properties that methods. so, methods such as...
+* ... toUpperCase can used on strings.
+* A stack is a data structure that allows you to push data on the stack, and pop data out of the stack in the opposite order.
 *
-
 */
+
+// console.log(newArray[0].toUpperCase());
+// console.log(newArray[0].toLowerCase());
+// console.log(newArray['length']);
+
+/*
+* Objects **
+*  
+* Key Value Pairs => key: value (key: string data type)
+* objects are collections of properties
+* 
+*/
+
+let day1 = {
+    squirrel: false,
+    events: ['work','touched tree', 'pizza'],
+    eat: 'walnuts',
+    eat: eat = 'Apples'
+};
+
+console.log(day1.eat);
 
