@@ -1416,9 +1416,19 @@ let  newArray  = ['MonDay', 'TueSday', 'WednesDay', 'ThurSday'];
 let day1 = {
     squirrel: false,
     events: ['work','touched tree', 'pizza'],
-    eat: 'walnuts',
-    eat: eat = 'Apples'
+    foodOfChoice: 'Walnuts',
+    eat: function () {
+        if (squirrel === true) {
+            return `my food of choice is ${foodOfChoice}`;
+        } else {
+
+        }
+    }
+    
 };
 
-console.log(day1.eat);
+/**
+ * object is a data structure. You can track a data by using key, and store a value.
+ * 
+ */
 
