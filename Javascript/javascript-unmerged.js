@@ -1431,4 +1431,68 @@ let day1 = {
  * object is a data structure. You can track a data by using key, and store a value.
  * 
  */
+let person = {
+    name: 'eric',
+    age: 28,
+    interest: ['basketball', 'cooking', 'alyssa'],
+    work: 'Software Engineer at Google'
+}
 
+let breakfast = {
+    name: 'The Lumberjack',
+    price: 9.95,
+    ingredients: ['eggs', 'sausage', 'toast', 'hashbrowns', 'pancakes']
+}
+
+var savingsAccount = {
+    balance: 1000,
+    interestRatePercent: 1,
+    deposit: function addMoney(amount) {
+      if (amount > 0) {
+        savingsAccount.balance += amount;
+      }
+    },
+    withdraw: function removeMoney(amount) {
+      var verifyBalance = savingsAccount.balance - amount;
+      if (amount > 0 && verifyBalance >= 0) {
+        savingsAccount.balance -= amount;
+      }
+    },
+    printSummary: function printAccountSummary() {
+        const printBalance = `Your balance is currently $${savingsAccount.balance}`;
+        const printInterestRate = `your interest rate is ${savingsAccount.interestRatePercent}%.`
+        return 'welcome!\n' + printBalance + ' and ' + printInterestRate;
+    }
+  };
+
+  let facebookProfile = {
+      name: 'Eric',
+      friends: 0,
+      messages: [],
+      post: function postMessage(message) {
+            facebookProfile.messages.push(message);
+      },
+      delete: function deleteMessage(index) {
+          facebookProfile.messages.splice(index,1);
+      },
+      // incremenet by 1
+      add: function addFriend() {
+          facebookProfile.friends += 1;
+      },
+      // decrement by 1
+      remove: function removeFriend() {
+          facebookProfile.friends -= 1;
+      }
+    };
+
+
+let donuts = [
+    { type: "Jelly", cost: 1.22 },
+    { type: "Chocolate", cost: 2.45 },
+    { type: "Cider", cost: 1.59 },
+    { type: "Boston Cream", cost: 5.99 }
+    ];
+
+const donutSummary = (donuts.forEach(donut => {
+    console.log(`${donut.type} donuts cost $${donut.cost} each`);
+}));
