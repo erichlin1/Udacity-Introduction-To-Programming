@@ -1519,5 +1519,6 @@ getClothing(false);
 /*
  * temporal dead zone - variables declared with let & const (block scoped)
  *
+ * reference link: http://www.regular-expressions.info/tutorial.html
  * 
  */
