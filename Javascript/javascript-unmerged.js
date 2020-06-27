@@ -1496,3 +1496,28 @@ let donuts = [
 const donutSummary = (donuts.forEach(donut => {
     console.log(`${donut.type} donuts cost $${donut.cost} each`);
 }));
+
+/*
+ * Javascript ES6 
+ */
+
+
+function getClothing(isCold) {
+    let warm;
+    if (isCold) {
+      var freezing = 'Grab a jacket!';
+      warm = 'take off your jacket';
+    } else {
+      var hot = 'It’s a shorts kind of day.';
+      console.log(freezing);
+    }
+    console.log(freezing);
+    //console.log(warm);
+  }
+getClothing(false);
+
+/*
+ * temporal dead zone - variables declared with let & const (block scoped)
+ *
+ * 
+ */
