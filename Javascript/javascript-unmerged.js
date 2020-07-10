@@ -1244,8 +1244,6 @@ function numberAddition(/* corresponds to each element in array */ number) {
     newNumbers.push(number);
 
 }
-numbers.forEach(numberAddition);
-console.log(newNumbers);
 
 /*  ***** .forEach() *****
 *
@@ -1335,7 +1333,6 @@ var bills = [50.23, 19.12, 34.01, 100.11, 12.15, 9.90, 29.11, 12.99, 10.00, 99.2
 const totals = bills.map((bill) => {
     return Number((bill + (bill * 0.15)).toFixed(2));
 });
-console.log(totals);
 
 
 /*  nested numbers
@@ -1355,7 +1352,7 @@ var numbers = [
     [76, 7, 9, 6, 3, 73, 77, 100, 56, 100]
 ];
 
-(function nestedNumbers(numbers) {
+function nestedNumbers(numbers) {
     let newNumbers = [];
     const numbersLen = numbers.length;
     for (let i = 0; i < numbersLen; i++) {
@@ -1365,7 +1362,7 @@ var numbers = [
         };
         newNumbers.push(tempList);
     };
-})();
+}
 
 /* 
 * method is just a function that is associated with an object. 
@@ -1373,31 +1370,155 @@ var numbers = [
 */
 
 /*  Data Structures: Objects and Arrays.
-*   Strings are itself an array.
-*   non-values (null & undefined) do not have properties
 *
 *
+**  Properties ** 
 *
-*
-*
-*
-*
+* Strings are itself an array.
+* Non-values (null & undefined) do not have properties
+* Indices in a array an an numerical representation of the property name for the array.
+* To access the element in an array, you mind access the property of the array.
+* property names are strings
+* a property can be accessed to calling its valid property name isng the bracket notation.
+* OR accessing using DOT Notation. 
+* value.x - fetches the property name with the literial x name.
+* value[x] - tries to evaluate the expression x. x is converted to a property name first since properties are string data type.
 *
 *
 */
 
+/* Accessing a property of an object */
 
-
-
-
-
+let  newArray  = ['MonDay', 'TueSday', 'WednesDay', 'ThurSday'];
 
 /* 
-*   Introduction to Git & Github 
-*   Diffing Files
-*   
+** Methods **
 *
+* properties can hold function values, called Methods.
+* strings are inheritantly an array. all arrays contains properties that methods. so, methods such as...
+* ... toUpperCase can used on strings.
+* A stack is a data structure that allows you to push data on the stack, and pop data out of the stack in the opposite order.
 *
-
 */
 
+// console.log(newArray[0].toUpperCase());
+// console.log(newArray[0].toLowerCase());
+// console.log(newArray['length']);
+
+/*
+* Objects **
+*  
+* Key Value Pairs => key: value (key: string data type)
+* objects are collections of properties
+* 
+*/
+
+let day1 = {
+    squirrel: false,
+    events: ['work','touched tree', 'pizza'],
+    foodOfChoice: 'Walnuts',
+    eat: function () {
+        if (squirrel === true) {
+            return `my food of choice is ${foodOfChoice}`;
+        } else {
+
+        }
+    }
+    
+};
+
+/**
+ * object is a data structure. You can track a data by using key, and store a value.
+ * 
+ */
+let person = {
+    name: 'eric',
+    age: 28,
+    interest: ['basketball', 'cooking', 'alyssa'],
+    work: 'Software Engineer at Google'
+}
+
+let breakfast = {
+    name: 'The Lumberjack',
+    price: 9.95,
+    ingredients: ['eggs', 'sausage', 'toast', 'hashbrowns', 'pancakes']
+}
+
+var savingsAccount = {
+    balance: 1000,
+    interestRatePercent: 1,
+    deposit: function addMoney(amount) {
+      if (amount > 0) {
+        savingsAccount.balance += amount;
+      }
+    },
+    withdraw: function removeMoney(amount) {
+      var verifyBalance = savingsAccount.balance - amount;
+      if (amount > 0 && verifyBalance >= 0) {
+        savingsAccount.balance -= amount;
+      }
+    },
+    printSummary: function printAccountSummary() {
+        const printBalance = `Your balance is currently $${savingsAccount.balance}`;
+        const printInterestRate = `your interest rate is ${savingsAccount.interestRatePercent}%.`
+        return 'welcome!\n' + printBalance + ' and ' + printInterestRate;
+    }
+  };
+
+  let facebookProfile = {
+      name: 'Eric',
+      friends: 0,
+      messages: [],
+      post: function postMessage(message) {
+            facebookProfile.messages.push(message);
+      },
+      delete: function deleteMessage(index) {
+          facebookProfile.messages.splice(index,1);
+      },
+      // incremenet by 1
+      add: function addFriend() {
+          facebookProfile.friends += 1;
+      },
+      // decrement by 1
+      remove: function removeFriend() {
+          facebookProfile.friends -= 1;
+      }
+    };
+
+
+let donuts = [
+    { type: "Jelly", cost: 1.22 },
+    { type: "Chocolate", cost: 2.45 },
+    { type: "Cider", cost: 1.59 },
+    { type: "Boston Cream", cost: 5.99 }
+    ];
+
+const donutSummary = (donuts.forEach(donut => {
+    console.log(`${donut.type} donuts cost $${donut.cost} each`);
+}));
+
+/*
+ * Javascript ES6 
+ */
+
+
+function getClothing(isCold) {
+    let warm;
+    if (isCold) {
+      var freezing = 'Grab a jacket!';
+      warm = 'take off your jacket';
+    } else {
+      var hot = 'It’s a shorts kind of day.';
+      console.log(freezing);
+    }
+    console.log(freezing);
+    //console.log(warm);
+  }
+getClothing(false);
+
+/*
+ * temporal dead zone - variables declared with let & const (block scoped)
+ *
+ * reference link: http://www.regular-expressions.info/tutorial.html
+ * 
+ */
