@@ -249,18 +249,38 @@ to life.
 
 
 It is with great enthusiasm to apply for the Marketing Designer role at Fast. Before you read further, let me draw
-your attention to 3 reasons why I might be a good fit for this position: proclivity for data-driven designs, 
+your attention to 3 reasons why I might be a good fit for this position: 
 
 
+1. Quantitive Reasoning Skills + Design
 
 
-
-
-1. a focus on data-driven designs
+1. a focus on data-driven designs, procliviy for data-driven 
     => Identified a blue ocean design by tracking and analzing (gathered insight from customer and competitive data)
      (generated $$$ within a specific time frame)
+     => how to utilized your quantitive reasoning skills in statistics to understand 
 
-2. 
+3. Problem Solver and a commit to growth
+    => Developed an automation script that created artwork designs using illustrator scripting
+    => spend endless nights learning and understand the illustrator script documentation (properties and methods) and 
+    => designed a ...
+4. strategic planner
+    => utilizing strategies, maximizing designs that performed, focusing on relevant metrics that performed. 
+5. a collaborator
+    => 
+6. hunger-to-learn,
+
+
+
+1. 
+
+
+
+
+
+
+
+
 
 
 a proclivity 
@@ -278,3 +298,7 @@ with solving a similar problem - simplying the user experience while streamlinin
 
 
 
+It is with great enthusiasm that I am applying for the Senior Marketing Designer role at Fast. 
+Before you read further, let me highlight 3 reasons why I am a good fit for this position:
+proclivity for illustrative designs that maximizes the bottom-line, a designer with a growth
+hacking mentality, and the hunger to learn with a commitment to long-term growth.
