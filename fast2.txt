@@ -1,0 +1,38 @@
+- How a candidate’s work experience meets job requirements.
+- How a candidate’s skills meet job requirements.
+- Why a candidate wants to work at the organization.
+
+Either express enthusiasm, show why you believe in the company, or show your experience. 
+
+
+
+Draft Introduction #1 - experience
+
+It is with great enthusiasm to apply for the Senior Marketing Designer role at Fast.
+In my 2+ years of experience managing multiple ecommerce stores on Etsy, I created 
+product designs, generated an average of $1,553 per sku, and hit 10.2% CMGR in 2019. I
+found solace in operations with a knack for process optimization and developed a deep
+interest in distilling the complexity of customer data to obtain actionable insights. 
+Along with my experience in creating marketing collaterials and knowledge of client-side 
+development, I am confident that I can bring fast's brand to life. 
+
+My interest in Fast's mission stems from a similar encountered problem - simplifying the 
+customer experience and streamlining the production process, albeit for custom product 
+designs. During my time operating Coffee Meets Mug LLC, manually creating designs for 
+customers became monotonous. Without previous knowledge of software development, I developed
+a terminal application in Javascript and Node.js that interfaces with Adobe Illustrator 
+to automatically generate design files based on customer's order data. It directly reduced 
+design inaccuracies, decreased fulfillment time, improved customer experience, and 
+importantly, improved brand equity. Accordingly, I created instructional product content
+to lower the barrier-to-purchase. Effectively, this process decreased operational cost by
+55% and lead-time by 3 days. 
+
+By defining my target audience, examining trends, and analyzing competitive purchase rate, 
+I created designs that were consistent with buyer interest, unique, and relevant to 
+brand proposition.
+ 
+
+
+
+
+
