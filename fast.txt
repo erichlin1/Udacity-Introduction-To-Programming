@@ -22,7 +22,7 @@ Effective Cover Letter Points
 5. Try expanding on your past experience in your cover letter with these strategies
 6. Discuss (competently) current issues in your industry to demonstrate expertise
 7. Quantify your achievements.
-8. managed 3 employees.
+8. managed 3 employees.q
 9. Numbering customers handled per day, size of budgets managed, or KPIs achieved.
 1. In addition...
 2. After working for...
@@ -330,3 +330,15 @@ My interest in Fast stems from my experience in ecommerce. I was challenged with
 2.	Data-driven 
 3.	Strategic growth thinker
 4.	Hunger to learn with a commitment to long-term growth,
+
+
+
+A proclivity for data-driven illustrative designs, a dedication to creating great user experience, hunger to learn with a commitment to long-term growth
+
+
+Draft #2
+
+It is with great enthusiasm that I am applying for the Senior Marketing Designer role at Fast. After reading Kyle’s job post on Linkedin, I was elated. Before you read further, let me draw your attention to 3 reasons why I might be a good fit for this position: proclivity for data-driven illustrative designs, a problem-solver, and hunger to learn with a commitment to long-term growth.
+
+My interest in Fast stems from my experience in ecommerce. I was challenged with solving a similar problem, albeit, design related – simplifying the user experience for custom design products and streamlining the production process. During
+
