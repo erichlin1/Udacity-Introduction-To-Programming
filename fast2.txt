@@ -9,27 +9,57 @@ Either express enthusiasm, show why you believe in the company, or show your exp
 Draft Introduction #1 - experience
 
 It is with great enthusiasm to apply for the Senior Marketing Designer role at Fast.
-In my 2+ years of experience managing multiple ecommerce stores on Etsy, I created
-digital product designs that generated an average of $1,533 per sku and hit 10.2% 
-CMGR in 2019. I found solace in operations with a knack for process optimization and 
-developed technical skills in distilling customer data to obtain actionable insights.
-Along with my experience in creating marketing collaterials and knowledge of client-side 
-development, I am confident that I can bring fast's brand to life. 
+In my 2+ years of experience managing multiple ecommerce stores on Etsy, I've expanded
+technical skills in digital marketing, progressed my knowledge in fundamental business operations, 
+developed competence in distilling data to obtain actionable insights, and 
+realized my knack for process optimization. Along with my 2+ years of experience in visual
+communication and my expertise of basic client-side development, I am confident that I
+can bring Fast's brand to life. 
+    1. expressed your knowledge in project management/businss operations
+    2. data-driven decision
+    3. being more efficient
+    4. client side development
 
-My interest in Fast's mission stems from a similar encountered problem - simplifying the 
-customer experience and streamlining the production process, albeit for custom digital designs.
-During my time managing Coffee Meets Mug LLC, manually creating custom designs became time-consuming.
-Without previous knowledge of software development, I developed a terminal application in Javascript and 
-Node.js that interfaces with Adobe Illustrator to automatically generate design files based on customer's 
-order data. This reduced design inaccuracies, decreased fulfillment time, and improved customers 
-experience, and brand equity. Effectively, it decreased operational cost by 55% and lead-time by 3 days. 
+My interest in Fast's mission stems from a similar encountered problem during my time managing 
+Coffee Meets Mug, LLC and Besties Gift Shop, LLC; that is, simplifying the customer experience
+for custom product designs and streamlining the production process. Manually creating 
+custom designs became time-consuming. So, I developed a terminal application in Javascript and 
+Node.js that interfaces with Adobe Illustrator to automatically generate design files based on 
+customers preferences/identifers. This reduced design inaccuracies, decreased fulfillment time 
+and more importantly, improved brand equity. This implementation decreased operational costs by 
+55%, and lead time by 3 days. 
+    1. in this paragraph, you've described yourself as a problem solver
+    2. Expressed interest in Fast's mission for simplying the user experience
+    3. mentioned brand equity (shows that you understand branding)
+
+As the sole designer, I created digital designs that were relevant to buyer interest, unique and
+consistent with brand proposition. This lead to an average revenue of $1,533 per sku, and 10.2%
+compound monthly growth rate in 2019. Most of my design decisions were based on examining trends,
+analyzing competitive purchase data and characterstics/interests relevant to my minimum viable 
+customer.
+    1. a data-driven designer
+    2. understand that data plays an important role.
 
 
 
-By defining my target audience, examining trends, and analyzing competitive purchase rate, 
-I created designs that were consistent with buyer interest, unique, and relevant to 
-brand proposition.
- 
+
+
+
+
+
+
+
+
+
+--------------
+
+Conclusion:
+
+Mention your portfolio, github account to view projects, and re-iterate that you are a data-driven designer
+with experience in digital marketing and project management. 
+
+
+
 
 
 -
