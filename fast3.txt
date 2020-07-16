@@ -1,0 +1,60 @@
+It is with great enthusiasm to apply for the Senior Marketing Designer role at Fast.
+In my experience managing multiple e-commerce businesses, I progressed my knowledge of 
+fundamental business operations, developed skills in digital marketing, improved 
+my competence in gathering actionable insights from data, and realized my knack for 
+process optimization. Along with my expertise in visal communication, and basic 
+client-side development, I am confident that I can bring Fast's brand to life. 
+
+
+Applying to Fast stems from my interest in e-commerce automation, and experience in branding. 
+During my time managing stores on Etsy, I learned that automating repetitive
+tasks in a digital transaction is imperative to positive brand equity.I encountered 
+a similar problem that Fast is solving, that is, simplifying the customer experience and 
+streamling the production process, but for personalized products.
+
+At a certain point, manually creating designs became time-consuming. So, I developed a terminal 
+application in Javascript and Node.js that interfacs with adobe illustrator. This reduced 
+design inaccuracies and decreased fulfillment time by automatically generating production-ready
+design files based on customer order data - resulting in decreased operational costs by
+35% and lead time by 3 days.
+
+As a sole designer, I produced digital designs that were unique, relevant to buyer persona, and
+consistent with brand proposition. This lead to an average revenue of $1,533 per sku, and 10.2%
+compound monthly growth rate in 2019. Major design decisions were also based on trends, and insights
+from competitive purchase data; Last, but certainly not least, I established brand identity, 
+and produced brand assets such logos, banners, social media assets and product photos. 
+
+Along with my responsiblities, I used Google and Etsy analytics to make operational and 
+design decisions based on customer interests and behavior. I reduced COGS within 20%-30% by switching 
+domestic suppliers from Phoenix to Indianaoplis after realizing 60% of my customers reside in 
+the East Coat. I swapped low-converting keywords with high conversion search queries, and replaced or
+revised digital designs that attributed low engagement/conversion rate.
+
+
+
+
+
+
+
+
+
+
+
+In my former role as Marketing Graphic Designer at Valleyworx, 
+
+I created:
+
+- Marketing collaterials (i.e., fliers, posters, creative assets for social media)
+- Maintained and enhanced visual brand langage 
+
+
+
+
+
+In my former role as Marketing Graphic Designer at Valleyworx, I was responsible for creating marketing 
+collaterals for company events such as fliers, posters, and creative assets for social media. Along with 
+maintaining existing visual brand language, I used various visual elements to enhance their brand image. 
+I led a brainstorm session with several colleagues to create a branded shirt design for their summer 
+Hackathon event. I was excited for this event; Unfortunately, it was detoured by COVID-19 pandemic. 
+Furthermore, having experience in creating static content with HTML5/CSS3, I helped with creating new 
+design components for their company website. 
