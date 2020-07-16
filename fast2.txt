@@ -22,11 +22,11 @@ can bring Fast's brand to life.
 
 My interest in Fast's mission stems from a similar encountered problem during my time managing 
 Coffee Meets Mug, LLC and Besties Gift Shop, LLC; that is, simplifying the customer experience
-for custom product designs and streamlining the production process. Manually creating 
+and streamlining the production process, albeit, custom digital designs. Manually creating 
 custom designs became time-consuming. So, I developed a terminal application in Javascript and 
 Node.js that interfaces with Adobe Illustrator to automatically generate design files based on 
 customers preferences/identifers. This reduced design inaccuracies, decreased fulfillment time 
-and more importantly, improved brand equity. This implementation decreased operational costs by 
+and more importantly, improved brand equity; In result, it decreased operational costs by 
 55%, and lead time by 3 days. 
     1. in this paragraph, you've described yourself as a problem solver
     2. Expressed interest in Fast's mission for simplying the user experience
@@ -34,11 +34,112 @@ and more importantly, improved brand equity. This implementation decreased opera
 
 As the sole designer, I created digital designs that were relevant to buyer interest, unique and
 consistent with brand proposition. This lead to an average revenue of $1,533 per sku, and 10.2%
-compound monthly growth rate in 2019. Most of my design decisions were based on examining trends,
-analyzing competitive purchase data and characterstics/interests relevant to my minimum viable 
-customer.
-    1. a data-driven designer
-    2. understand that data plays an important role.
+compound monthly growth rate in 2019. I firmly believe that design should be well informed by data;
+It signficantly increases engagement, conversions, and ultimately, maximizes the bottom-line. 
+In addition to product designs, I established the brand identity and created brand collaterals such
+as logos, banners, creative assets for paid social, product photos and packaging labels. 
+    1. Designer
+    2. Data-driven 
+
+Along with my responsiblity as designer, I was a digital marketer. I used google analytics, 
+and Etsy's onsite Analytics to understand customer behavior, demographics, and interests. Realizing
+that 60% of my customers reside in the East Coast, I switched suppliers from Phoenix, AZ to Indianaoplis, IN;
+This reduced my COGS, in particular, shipping cost by 20% - 30% for domestic orders. As for international
+orders, I switched to international suppliers. scripting in HTML/CSS, I developed a static email template in 
+orderdesk that automatically triggers a send once a buyer purchases a product - confirms personalization 
+options. In klaviyo, I created sale announcements, and experimented with flow (automated email sends).
+Lastly, 
+
+
+
+
+
+
+In my former role as Marketing Graphic Designer at Valleyworx, I was responsible for creating marketing 
+collaterals for company events such as fliers, posters, and creative assets for social media. Along with 
+maintaining existing visual brand language, I used various visual elements to enhance their brand image. 
+I led a brainstorm session with several colleagues to create a branded shirt design for their summer 
+Hackathon event. I was excited for this event; Unfortunately, it was detoured by COVID-19 pandemic. 
+Furthermore, having experience in creating static content with HTML5/CSS3, I helped with creating new 
+design components for their company website. 
+    1. Experience design Marketing Collaterals
+
+
+----------
+Conclusion 
+
+
+
+
+
+
+
+
+
+
+I learned the 
+basics of creating static content using HTML5/CSS3 and interactive content using Javascript and the DOM.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Near the end of my employment with Valleyworx, they needed assistance with basic development on their
+company website. So, I attended their coding bootcamp, while enrolled in Udacity's programs 
+
+and enrolled in Udacity's introduction to 
+programming, and front-end developer nanodegree. Within 6 weeks, I learned the basics of DOM ma
+
+
+
+During my time working for Valleyworx, they needed someone to build landing pages for their company website, 
+
+
+
+
+During my time working for Valleyworx, I took the initiative to learn the basics of web development through
+Udacity's 
+
+As you mentioned in your job post, 
+
+
+
+
+
+
+
+
+ create a design that 
+
+ into the creation of a 
+branded t-shirt for Valleyworx's 2020 Hackathon event. Note
+
+In your post, you mentioned that 
+
+
+
+
+
+
+
+consistent brand  
+
+
+ company events such as posters, fliers and infographics. Additionally, I lead the the 
+
 
 
 
